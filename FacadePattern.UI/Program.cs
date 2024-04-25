@@ -1,4 +1,6 @@
-﻿namespace FacadePattern.UI;
+﻿using FacadePattern.Services;
+
+namespace FacadePattern.UI;
 
 internal class Program
 {
@@ -39,6 +41,9 @@ internal class Program
                     break;
                 case ConsoleKey.RightArrow:
                     Console.WriteLine("Press: →");
+                    MailService.Send();
+                    // クライアント側はこれを呼ぶのみ(履歴保存は実装側で保証されている)
+
                     break;
                 case ConsoleKey.D0:
                     Console.WriteLine("Press: 0");

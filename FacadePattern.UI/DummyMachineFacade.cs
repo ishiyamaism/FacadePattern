@@ -2,6 +2,10 @@ using FacadePattern;
 
 namespace FacadePattern.UI;
 
+/// <summary>
+/// Machines側の実装を待つ間、など用に
+/// クライアント側に仮に持つダミーFacade
+/// </summary>
 internal sealed class DummyMachineFacade : IMachineFacade
 {
   /// <summary>
