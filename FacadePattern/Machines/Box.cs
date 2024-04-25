@@ -5,7 +5,7 @@ internal class Box
     internal int GetInternalTemperature()
     {
         int internalTemperature = _random.Next(10, 80);
-        Console.WriteLine($"本当の温度は{internalTemperature}℃");
+        Console.WriteLine($"(……本当の温度は{internalTemperature}℃だけど……)");
         return internalTemperature;
     }
 
