@@ -25,16 +25,18 @@ internal class Program
                 case ConsoleKey.A:
                     Console.WriteLine("Press: A");
 
-                    // Facadeを介することで、クライアント側は、
-                    // Facadeの向こうで何が可能なのかを知ることができる。
-                    FanEntity entity = MachineFacade.FanSpin(4);
-                    Console.WriteLine(entity.FanId.ToString());
+                    MachineFacade.CameraTake();
+                    Console.WriteLine("Done: Camera().Take()");
 
+                    int tempAfterFanStop = MachineFacade.BoxInternalTemperatureFanStop();
+                    Console.WriteLine($"Done: BoxInternalTemperatureFanStop(): FanStop後: {tempAfterFanStop}℃");
                     break;
 
                 case ConsoleKey.B:
                     Console.WriteLine("Press: B");
 
+                    int tempInMemory = MachineFacade.BoxInternalTemperatureInMemory();
+                    Console.WriteLine(tempInMemory);
 
                     break;
                 case ConsoleKey.RightArrow:
