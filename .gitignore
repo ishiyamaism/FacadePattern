@@ -1,5 +1,3 @@
 /.DS_Store
-FacadePattern/bin
-FacadePattern/obj
-FacadePattern.UI/bin
-FacadePattern.UI/obj
+**/bin/
+**/obj/

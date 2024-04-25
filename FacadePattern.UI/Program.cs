@@ -23,10 +23,9 @@ internal class Program
                 case ConsoleKey.A:
                     Console.WriteLine("Press: A");
 
-                    // たくさんの機械類を制御するようなクラス群があった場合、
-                    // 何をどう使えばいいのか、クライアント側が考えなければならないのはダメな実装。
-                    var fan = new Fan();
-                    FanEntity entity = fan.GetSpin(4);
+                    // Facadeを介することで、クライアント側は、
+                    // Facadeの向こうで何が可能なのかを知ることができる。
+                    FanEntity entity = MachineFacade.FanSpin(4);
                     Console.WriteLine(entity.FanId.ToString());
 
                     break;
