@@ -4,8 +4,6 @@ namespace FacadePattern;
 
 public class MachineFacade : IMachineFacade
 {
-  private static int _fanStopValue;
-
   /// <summary>
   /// Fanを止めて後のBox内部温度
   /// </summary>
@@ -16,9 +14,9 @@ public class MachineFacade : IMachineFacade
 
     try
     {
-      System.Threading.Thread.Sleep(5000);
-      _fanStopValue = new Box().GetInternalTemperature();
-      return _fanStopValue;
+      System.Threading.Thread.Sleep(1000);
+      Memory.StopFanValue = new Box().GetInternalTemperature();
+      return Memory.StopFanValue;
     }
     finally
     {
@@ -33,7 +31,7 @@ public class MachineFacade : IMachineFacade
 
   public int BoxInternalTemperatureInMemory()
   {
-    return _fanStopValue;
+    return Memory.StopFanValue;
   }
 
   public int BoxExternalTemperature()
