@@ -36,7 +36,7 @@ internal class Program
                     Console.WriteLine("Press: B");
 
                     int tempInMemory = UIShared.MachineFacade.BoxInternalTemperatureInMemory();
-                    Console.WriteLine($"なんと{tempInMemory}℃です！");
+                    Console.WriteLine($"なんと{tempInMemory}℃です！！！");
 
                     break;
                 case ConsoleKey.RightArrow:
