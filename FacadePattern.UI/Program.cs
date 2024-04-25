@@ -1,6 +1,4 @@
-﻿using System.Reflection.PortableExecutable;
-
-namespace FacadePattern.UI;
+﻿namespace FacadePattern.UI;
 
 internal class Program
 {
@@ -25,17 +23,17 @@ internal class Program
                 case ConsoleKey.A:
                     Console.WriteLine("Press: A");
 
-                    MachineFacade.CameraTake();
+                    UIShared.MachineFacade.CameraTake();
                     Console.WriteLine("Done: Camera().Take()");
 
-                    int tempAfterFanStop = MachineFacade.BoxInternalTemperatureFanStop();
+                    int tempAfterFanStop = UIShared.MachineFacade.BoxInternalTemperatureFanStop();
                     Console.WriteLine($"Done: BoxInternalTemperatureFanStop(): FanStop後: {tempAfterFanStop}℃");
                     break;
 
                 case ConsoleKey.B:
                     Console.WriteLine("Press: B");
 
-                    int tempInMemory = MachineFacade.BoxInternalTemperatureInMemory();
+                    int tempInMemory = UIShared.MachineFacade.BoxInternalTemperatureInMemory();
                     Console.WriteLine(tempInMemory);
 
                     break;

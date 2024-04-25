@@ -1,13 +1,14 @@
 namespace FacadePattern;
 
-public static class MachineFacade
+public class MachineFacade : IMachineFacade
 {
   private static int _fanStopValue;
+
   /// <summary>
   /// Fanを止めて後のBox内部温度
   /// </summary>
-  /// <returns></returns>
-  public static int BoxInternalTemperatureFanStop()
+  /// <returns>BoxInternalTemperature</returns>
+  public int BoxInternalTemperatureFanStop()
   {
     FanStop(0);
 
@@ -23,22 +24,22 @@ public static class MachineFacade
     }
   }
 
-  public static int BoxInternalTemperature()
+  public int BoxInternalTemperature()
   {
     return new Box().GetInternalTemperature();
   }
 
-  public static int BoxInternalTemperatureInMemory()
+  public int BoxInternalTemperatureInMemory()
   {
     return _fanStopValue;
   }
 
-  public static int BoxExternalTemperature()
+  public int BoxExternalTemperature()
   {
     return new Box().GetExternalTemperature();
   }
 
-  public static void CameraTake()
+  public void CameraTake()
   {
     if (BoxInternalTemperature() > 80)
     {
@@ -46,32 +47,32 @@ public static class MachineFacade
     }
     new Camera().Take();
   }
-  public static FanEntity FanSpin(int fanId)
+  public FanEntity FanSpin(int fanId)
   {
     return new Fan().GetSpin(fanId);
   }
 
-  public static void FanStart(int fanId)
+  public void FanStart(int fanId)
   {
     new Fan().Start(fanId);
   }
 
-  public static void FanStop(int fanId)
+  public void FanStop(int fanId)
   {
     new Fan().Stop(fanId);
   }
 
-  public static void PowerOn()
+  public void PowerOn()
   {
     new Power().On();
   }
 
-  public static void PowerOff()
+  public void PowerOff()
   {
     new Power().Off();
   }
 
-  public static void PowerBacklightOff()
+  public void PowerBacklightOff()
   {
     new Power().BacklightOff();
   }
