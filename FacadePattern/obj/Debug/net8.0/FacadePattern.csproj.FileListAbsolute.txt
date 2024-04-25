@@ -31,3 +31,4 @@ C:/Users/ishiyamaism/source/repos/FacadePattern/FacadePattern/obj/Debug/net8.0/r
 /Users/ishiyamaism/src/csharp/FacadePattern/FacadePattern/obj/Debug/net8.0/refint/FacadePattern.dll
 /Users/ishiyamaism/src/csharp/FacadePattern/FacadePattern/obj/Debug/net8.0/FacadePattern.pdb
 /Users/ishiyamaism/src/csharp/FacadePattern/FacadePattern/obj/Debug/net8.0/ref/FacadePattern.dll
+/Users/ishiyamaism/src/csharp/FacadePattern/FacadePattern/obj/Debug/net8.0/FacadePattern.sourcelink.json

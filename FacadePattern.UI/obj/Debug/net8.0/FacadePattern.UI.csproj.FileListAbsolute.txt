@@ -52,3 +52,4 @@ C:/Users/ishiyamaism/source/repos/FacadePattern/FacadePattern.UI/obj/Debug/net8.
 /Users/ishiyamaism/src/csharp/FacadePattern/FacadePattern.UI/obj/Debug/net8.0/FacadePattern.UI.pdb
 /Users/ishiyamaism/src/csharp/FacadePattern/FacadePattern.UI/obj/Debug/net8.0/FacadePattern.UI.genruntimeconfig.cache
 /Users/ishiyamaism/src/csharp/FacadePattern/FacadePattern.UI/obj/Debug/net8.0/ref/FacadePattern.UI.dll
+/Users/ishiyamaism/src/csharp/FacadePattern/FacadePattern.UI/obj/Debug/net8.0/FacadePattern.UI.sourcelink.json
