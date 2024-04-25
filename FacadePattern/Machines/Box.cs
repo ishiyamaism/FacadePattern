@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace FacadePattern
 {
-    public class Box
+    internal class Box
     {
         private Random _random = new Random();
-        public int GetInternalTemperature()
+        internal int GetInternalTemperature()
         {
             return _random.Next(10, 80);
         }
 
-        public int GetExternalTemperature()
+        internal int GetExternalTemperature()
         {
             return _random.Next(10, 80);
         }

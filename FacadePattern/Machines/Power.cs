@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace FacadePattern
 {
-    public class Power
+    internal class Power
     {
-        public void On()
+        internal void On()
         { }
 
-        public void Off()
+        internal void Off()
         { }
 
-        public void BacklightOff()
+        internal void BacklightOff()
         {
 
         }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FacadePattern
 {
-    public class Camera
+    internal class Camera
     {
-        public void Take()
+        internal void Take()
         {
         }
     }

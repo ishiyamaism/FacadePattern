@@ -1,4 +1,6 @@
-﻿namespace FacadePattern.UI;
+﻿using System.Reflection.PortableExecutable;
+
+namespace FacadePattern.UI;
 
 internal class Program
 {
@@ -27,6 +29,12 @@ internal class Program
                     // Facadeの向こうで何が可能なのかを知ることができる。
                     FanEntity entity = MachineFacade.FanSpin(4);
                     Console.WriteLine(entity.FanId.ToString());
+
+                    break;
+
+                case ConsoleKey.B:
+                    Console.WriteLine("Press: B");
+
 
                     break;
                 case ConsoleKey.RightArrow:
