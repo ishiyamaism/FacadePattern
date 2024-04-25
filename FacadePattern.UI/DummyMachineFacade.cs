@@ -1,4 +1,4 @@
-using FacadePattern;
+using FacadePattern.Machines;
 
 namespace FacadePattern.UI;
 
@@ -62,6 +62,11 @@ internal sealed class DummyMachineFacade : IMachineFacade
   }
 
   public void PowerBacklightOff()
+  {
+    throw new NotImplementedException();
+  }
+
+  FanEntity IMachineFacade.FanSpin(int fanId)
   {
     throw new NotImplementedException();
   }

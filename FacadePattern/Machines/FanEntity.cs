@@ -1,14 +1,13 @@
-﻿namespace FacadePattern
-{
-    public sealed class FanEntity
-    {
-        public FanEntity(int fanId, int value)
-        {
-            FanId = fanId;
-            Value = value;
-        }
+﻿namespace FacadePattern.Machines;
 
-        public int FanId { get; }
-        public int Value { get; }
+public sealed class FanEntity
+{
+    public FanEntity(int fanId, int value)
+    {
+        FanId = fanId;
+        Value = value;
     }
+
+    public int FanId { get; }
+    public int Value { get; }
 }

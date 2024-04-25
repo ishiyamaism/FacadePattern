@@ -1,3 +1,5 @@
+using FacadePattern.Machines;
+
 namespace FacadePattern;
 
 public interface IMachineFacade

@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FacadePattern
+﻿namespace FacadePattern.Machines;
+internal class Camera
 {
-    internal class Camera
+    internal void Take()
     {
-        internal void Take()
-        {
-        }
     }
 }
+

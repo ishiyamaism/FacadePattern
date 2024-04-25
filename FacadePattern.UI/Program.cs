@@ -42,6 +42,7 @@ internal class Program
                 case ConsoleKey.RightArrow:
                     Console.WriteLine("Press: →");
 
+                    // メール送信処理
                     MailService.Send();
                     // クライアント側はこれを呼ぶのみ(履歴保存は実装側で保証されている)
                     Console.WriteLine("Mail送信完了(保存されますた)");
